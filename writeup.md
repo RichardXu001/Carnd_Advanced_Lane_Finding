@@ -113,7 +113,9 @@ Here's a [link to my video result](output_video/result_challenge.mp4)
 
 
 
-I tried on harder_challenge_video, and find it doesn't work at all.
-Maybe it still need more new solution to solve that.
+When I first submit the project, the radius of curve is too big than expect.
+Then I modify the radius formula and update y_eval=np.max(lefty)/2.
+Finally it is OK now.
+When I tried on challenge and harder_challenge_video, and find it doesn't work well, especially when it met the wall and the shadow, it will be mistaken as lane. Later I will  take more HUE factor into consideration as the color of lane line could only be yellow and white.
 
 
