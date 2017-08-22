@@ -102,8 +102,7 @@ see Jupyter Notebook
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](output_video/result2.mp4)
-Here's a [link to my video result](output_video/result_challenge.mp4)
+Here's a [link to my video result](output_video/result8.mp4)
 
 ---
 
@@ -117,5 +116,13 @@ When I first submit the project, the radius of curve is too big than expect.
 Then I modify the radius formula and update y_eval=np.max(lefty)/2.
 Finally it is OK now.
 When I tried on challenge and harder_challenge_video, and find it doesn't work well, especially when it met the wall and the shadow, it will be mistaken as lane. Later I will  take more HUE factor into consideration as the color of lane line could only be yellow and white.
+
+Update2017.8.22:
+I modify 3 things as listed below:
+1. I change the width of the lane from 900 pixel to 700 pixel
+2. I use all the calibration image to generate the calibration parameter instead of using only one picture
+3. I add a error check to estimate the former frame and the next frame polynomial parameter is similar, to prevent the occasional recognition mistakes.
+
+After these update, the video goes well.  
 
 
